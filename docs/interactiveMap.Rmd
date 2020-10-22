@@ -1,0 +1,14 @@
+---
+title: "R Markdown and Leaflet"
+author: "Nandan Prasad"
+date: "October 22, 2020"
+output: html_document
+---
+
+
+```{r}
+library(leaflet)
+InteractiveMap <- leaflet() %>% addTiles() 
+InteractiveMap <- InteractiveMap %>% addMarkers(lat=12.9141, lng= 74.8560, popup="Mangalore, India")
+InteractiveMap
+```
